@@ -5,7 +5,7 @@ import Home from ".";
 import { renderTheme } from "../../styles/renderTheme";
 
 test("renders learn react link", () => {
-  const { debug } = renderTheme(<Home />);
+  renderTheme(<Home />);
 
   const headingContainer = screen.getByRole("heading", {
     name: "Hello World!"
