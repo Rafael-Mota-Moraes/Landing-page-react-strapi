@@ -1,8 +1,19 @@
-import { render, screen } from "@testing-library/react";
+/* eslint-disable testing-library/no-node-access */
+/* eslint-disable testing-library/no-debugging-utils */
+import { screen } from "@testing-library/react";
 import Home from ".";
+import { renderTheme } from "../../styles/renderTheme";
 
 test("renders learn react link", () => {
-  render(<Home />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const { debug } = renderTheme(<Home />);
+
+  const headingContainer = screen.getByRole("heading", {
+    name: "Hello World!"
+  }).parentElement;
+
+  expect(headingContainer).toHaveStyle({
+    background: "red"
+  });
+
+  expect(headingContainer).toMatchSnapshot();
 });
