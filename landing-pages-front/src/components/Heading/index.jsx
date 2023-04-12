@@ -5,7 +5,7 @@ export const Heading = ({
   children,
   colorDark = true,
   as = "h1",
-  size = "xbig",
+  size = "huge",
   uppercase = false
 }) => {
   return (
