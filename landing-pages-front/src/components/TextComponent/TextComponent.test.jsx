@@ -1,4 +1,4 @@
-import { screen, within } from "@storybook/testing-library";
+import { screen } from "@storybook/testing-library";
 import { TextComponent } from ".";
 import { renderTheme } from "../../styles/renderTheme";
 
