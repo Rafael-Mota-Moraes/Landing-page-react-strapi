@@ -1,7 +1,3 @@
-/* eslint-disable testing-library/no-node-access */
-/* eslint-disable testing-library/no-container */
-/* eslint-disable jest/valid-expect */
-/* eslint-disable testing-library/no-debugging-utils */
 import { screen } from "@testing-library/react";
 import { Heading } from ".";
 import { renderTheme } from "../../styles/renderTheme";

@@ -1,5 +1,5 @@
 import { Heading } from ".";
-// eslint-disable-next-line import/no-anonymous-default-export
+
 export default {
   title: "Heading",
   component: Heading,
