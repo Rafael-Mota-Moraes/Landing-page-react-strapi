@@ -25,12 +25,12 @@ describe("<MenuLink />", () => {
     );
   });
   it("should match a snapshot", () => {
-    renderTheme(
+    const { container } = renderTheme(
       <MenuLink link="http://localhost:3000" newTab={false}>
         Children
       </MenuLink>
     );
 
-    expect(screen.getByRole("link", { name: "Children" })).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
